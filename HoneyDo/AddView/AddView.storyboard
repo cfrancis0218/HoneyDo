@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add View Controller-->
+        <scene sceneID="6KD-8P-zuc">
+            <objects>
+                <viewController storyboardIdentifier="add" id="SjB-XQ-Nb4" customClass="AddViewController" customModule="HoneyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Svq-W3-qdR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytI-g1-SJ2">
+                                <rect key="frame" x="20" y="44" width="374" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fX2-0D-zAo"/>
+                                    <constraint firstAttribute="width" constant="374" id="q1n-83-5sn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add A Honey Task" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="io0-yU-rcb">
+                                <rect key="frame" x="20" y="132" width="374" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="TSD-Vb-WBh"/>
+                                    <constraint firstAttribute="width" constant="374" id="kUr-yu-nVg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHA-tK-8Hx">
+                                <rect key="frame" x="20" y="820" width="374" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="2B1-Ot-Wdm"/>
+                                    <constraint firstAttribute="width" constant="374" id="xAl-1y-ayO"/>
+                                </constraints>
+                                <state key="normal" title="Add Honey Task">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addAction:" destination="SjB-XQ-Nb4" eventType="touchUpInside" id="gNb-WM-jnQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ytI-g1-SJ2" firstAttribute="top" secondItem="4eL-u0-SUE" secondAttribute="top" id="2Ku-vs-pMU"/>
+                            <constraint firstItem="4eL-u0-SUE" firstAttribute="trailing" secondItem="uHA-tK-8Hx" secondAttribute="trailing" constant="20" id="Ayl-ey-qKx"/>
+                            <constraint firstItem="uHA-tK-8Hx" firstAttribute="bottom" secondItem="4eL-u0-SUE" secondAttribute="bottom" id="Blx-At-bkf"/>
+                            <constraint firstItem="io0-yU-rcb" firstAttribute="leading" secondItem="4eL-u0-SUE" secondAttribute="leading" constant="20" id="HkP-fh-Ykj"/>
+                            <constraint firstItem="4eL-u0-SUE" firstAttribute="trailing" secondItem="io0-yU-rcb" secondAttribute="trailing" constant="20" id="OmJ-9i-6yI"/>
+                            <constraint firstItem="io0-yU-rcb" firstAttribute="top" secondItem="ytI-g1-SJ2" secondAttribute="bottom" constant="8" id="TNe-GV-ven"/>
+                            <constraint firstItem="ytI-g1-SJ2" firstAttribute="leading" secondItem="4eL-u0-SUE" secondAttribute="leading" constant="20" id="sg7-vH-lG1"/>
+                            <constraint firstItem="uHA-tK-8Hx" firstAttribute="leading" secondItem="4eL-u0-SUE" secondAttribute="leading" constant="20" id="uhz-MM-EoQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4eL-u0-SUE"/>
+                    </view>
+                    <connections>
+                        <outlet property="addTaskButton" destination="uHA-tK-8Hx" id="zNZ-RT-HNw"/>
+                        <outlet property="addTaskLabel" destination="ytI-g1-SJ2" id="GWO-WI-M1c"/>
+                        <outlet property="taskField" destination="io0-yU-rcb" id="fje-f4-85y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7JS-DL-tYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155.07246376811597" y="154.6875"/>
+        </scene>
+    </scenes>
+</document>

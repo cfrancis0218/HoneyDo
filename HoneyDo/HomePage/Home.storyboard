@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="IqF-8u-26J">
+            <objects>
+                <viewController id="Lvo-WE-LnH" customClass="HomeViewController" customModule="HoneyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UYp-oB-lEL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="18-183456_bee-honeycomb-clip-art-honey-png" translatesAutoresizingMaskIntoConstraints="NO" id="Dee-ZU-G30">
+                                <rect key="frame" x="-47" y="0.0" width="508" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="I4z-fq-KZS"/>
+                                    <constraint firstAttribute="width" constant="508" id="wTe-92-zbv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwX-ey-WDv">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="szT-Dm-7z8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="HoneyDo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="I8q-y9-ifE" kind="show" id="YZq-qb-PQu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.91775829369999995" blue="0.3631069227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JaL-Ki-ImC" firstAttribute="trailing" secondItem="fwX-ey-WDv" secondAttribute="trailing" constant="20" id="0gY-MK-tSs"/>
+                            <constraint firstAttribute="trailing" secondItem="Dee-ZU-G30" secondAttribute="trailing" constant="-47" id="KYh-mg-kHZ"/>
+                            <constraint firstItem="fwX-ey-WDv" firstAttribute="leading" secondItem="JaL-Ki-ImC" secondAttribute="leading" constant="20" id="RmB-xd-gXK"/>
+                            <constraint firstItem="fwX-ey-WDv" firstAttribute="bottom" secondItem="JaL-Ki-ImC" secondAttribute="bottom" id="VNd-8r-ewf"/>
+                            <constraint firstItem="Dee-ZU-G30" firstAttribute="top" secondItem="UYp-oB-lEL" secondAttribute="top" id="giR-eB-3Wa"/>
+                            <constraint firstItem="Dee-ZU-G30" firstAttribute="leading" secondItem="UYp-oB-lEL" secondAttribute="leading" constant="-47" id="tJq-dO-ZSz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JaL-Ki-ImC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jm-FO-eoo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="154.6875"/>
+        </scene>
+        <!--taskView-->
+        <scene sceneID="ryU-uV-cbV">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="taskView" storyboardName="Main" referencedIdentifier="taskView" id="I8q-y9-ifE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PSc-Pt-pXc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35d-FL-QOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="18-183456_bee-honeycomb-clip-art-honey-png" width="1600" height="615"/>
+    </resources>
+</document>

@@ -14,6 +14,11 @@
 		536C432D24F18DE1006E571A /* HoneyDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 536C432B24F18DE1006E571A /* HoneyDo.xcdatamodeld */; };
 		536C432F24F18DE2006E571A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536C432E24F18DE2006E571A /* Assets.xcassets */; };
 		536C433224F18DE2006E571A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536C433024F18DE2006E571A /* LaunchScreen.storyboard */; };
+		53731DD324F2C3B400A5E434 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53731DD224F2C3B400A5E434 /* TaskCell.swift */; };
+		53731DD624F2C9DD00A5E434 /* AddView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53731DD524F2C9DD00A5E434 /* AddView.storyboard */; };
+		53731DD824F2CBB700A5E434 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53731DD724F2CBB700A5E434 /* AddViewController.swift */; };
+		53731DDC24F2D77E00A5E434 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53731DDB24F2D77E00A5E434 /* Home.storyboard */; };
+		53731DDE24F2D78900A5E434 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53731DDD24F2D78900A5E434 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		536C432E24F18DE2006E571A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		536C433124F18DE2006E571A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		536C433324F18DE2006E571A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53731DD224F2C3B400A5E434 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		53731DD524F2C9DD00A5E434 /* AddView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddView.storyboard; sourceTree = "<group>"; };
+		53731DD724F2CBB700A5E434 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		53731DDB24F2D77E00A5E434 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		53731DDD24F2D78900A5E434 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,45 @@
 		536C432124F18DE1006E571A /* HoneyDo */ = {
 			isa = PBXGroup;
 			children = (
+				53731DDA24F2D77000A5E434 /* HomePage */,
+				53731DD924F2D75500A5E434 /* TaskView */,
+				53731DD424F2C99000A5E434 /* AddView */,
 				536C432224F18DE1006E571A /* AppDelegate.swift */,
 				536C432424F18DE1006E571A /* SceneDelegate.swift */,
-				536C432624F18DE1006E571A /* ViewController.swift */,
-				536C432824F18DE1006E571A /* Main.storyboard */,
 				536C432E24F18DE2006E571A /* Assets.xcassets */,
 				536C433024F18DE2006E571A /* LaunchScreen.storyboard */,
 				536C433324F18DE2006E571A /* Info.plist */,
 				536C432B24F18DE1006E571A /* HoneyDo.xcdatamodeld */,
 			);
 			path = HoneyDo;
+			sourceTree = "<group>";
+		};
+		53731DD424F2C99000A5E434 /* AddView */ = {
+			isa = PBXGroup;
+			children = (
+				53731DD524F2C9DD00A5E434 /* AddView.storyboard */,
+				53731DD724F2CBB700A5E434 /* AddViewController.swift */,
+			);
+			path = AddView;
+			sourceTree = "<group>";
+		};
+		53731DD924F2D75500A5E434 /* TaskView */ = {
+			isa = PBXGroup;
+			children = (
+				536C432824F18DE1006E571A /* Main.storyboard */,
+				53731DD224F2C3B400A5E434 /* TaskCell.swift */,
+				536C432624F18DE1006E571A /* ViewController.swift */,
+			);
+			path = TaskView;
+			sourceTree = "<group>";
+		};
+		53731DDA24F2D77000A5E434 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				53731DDB24F2D77E00A5E434 /* Home.storyboard */,
+				53731DDD24F2D78900A5E434 /* HomeViewController.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				536C433224F18DE2006E571A /* LaunchScreen.storyboard in Resources */,
+				53731DDC24F2D77E00A5E434 /* Home.storyboard in Resources */,
+				53731DD624F2C9DD00A5E434 /* AddView.storyboard in Resources */,
 				536C432F24F18DE2006E571A /* Assets.xcassets in Resources */,
 				536C432A24F18DE1006E571A /* Main.storyboard in Resources */,
 			);
@@ -143,8 +184,11 @@
 			files = (
 				536C432724F18DE1006E571A /* ViewController.swift in Sources */,
 				536C432324F18DE1006E571A /* AppDelegate.swift in Sources */,
+				53731DD824F2CBB700A5E434 /* AddViewController.swift in Sources */,
 				536C432D24F18DE1006E571A /* HoneyDo.xcdatamodeld in Sources */,
 				536C432524F18DE1006E571A /* SceneDelegate.swift in Sources */,
+				53731DDE24F2D78900A5E434 /* HomeViewController.swift in Sources */,
+				53731DD324F2C3B400A5E434 /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
